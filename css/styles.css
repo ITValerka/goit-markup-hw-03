@@ -1,0 +1,175 @@
+body {
+  font-family: Roboto, sans-serif;
+  color: #212121;
+}
+:root {
+  --color-logo-btn-accent: #2196f3;
+}
+:root {
+  --second-colour-for-text: #757575;
+}
+:root {
+  --accent-text-for-btn: #ffffff;
+}
+:root {
+  --secondary-font: Raleway;
+}
+/*=====HEADER=====*/
+.header {
+  font-family: Roboto, sans-serif;
+}
+.nav-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 2;
+  cursor: pointer;
+}
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--color-logo-btn-accent);
+}
+.contact-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 2;
+}
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--color-logo-btn-accent);
+}
+.contact-list {
+  color: var(--second-colour-for-text);
+}
+/*======END HEADER=====*/
+/*======SECTION HERO=====*/
+.slogan {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 6;
+}
+.make-order {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 6;
+  color: var(--accent-text-for-btn);
+  background-color: var(--color-logo-btn-accent);
+  cursor: pointer;
+}
+.make-order:hover,
+.make-order:focus {
+  color: var(--accent-text-for-btn);
+  background-color: #188ce8;
+}
+/*======SECTION HERO END=====*/
+/*======SECTION FEATURES=====*/
+.section-title-hidden {
+  visibility: hidden;
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 3%;
+}
+.subtitle-content {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 3;
+  color: var(--second-colour-for-text);
+}
+/*======SECTION FEATURES END=====*/
+/*======SECTION OUR TEAM=====*/
+.member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 3;
+}
+.member-position {
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 3;
+  color: var(--second-colour-for-text);
+}
+/*======SECTION OUR TEAM END=====*/
+/*======FOOTER=====*/
+.footer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 3;
+}
+.all-contacts {
+  font-style: normal;
+}
+.contact-item-map:hover,
+.contact-item-map:focus {
+  color: var(--color-logo-btn-accent);
+}
+.all-contacts:hover,
+.all-contacts:focus {
+  color: var(--color-logo-btn-accent);
+}
+/*======FOOTER END=====*/
+
+/*======LIST PROJECTS=====*/
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 6;
+}
+.project-type {
+  font-size: 16;
+  line-height: 1.87;
+  letter-spacing: 3;
+  color: var(--second-colour-for-text);
+}
+/*======LIST PROJECTS END=====*/
+/*======COMPONETS=====*/
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 3;
+  color: var(--color-logo-btn-accent);
+}
+.logo-studio {
+  color: #000000;
+}
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 3;
+}
+.filter-button {
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 3;
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--color-logo-btn-accent);
+  color: var(--accent-text-for-btn);
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+a {
+  color: inherit;
+}
+/*======COMPONETS END=====*/
