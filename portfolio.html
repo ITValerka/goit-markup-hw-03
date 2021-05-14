@@ -17,39 +17,51 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <a href="./index.html" class="logo link">
-          <span class="logo-web">Web</span
-          ><span class="logo-studio">Studio</span></a
-        >
-        <ul class="nav-list list">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-list-link link">Студия</a>
+    <header class="header container">
+      <div class="container">
+        <nav class="nav">
+          <div class="container">
+            <a href="./index.html" class="logo link">
+              <span class="logo-web">Web</span
+              ><span class="logo-studio">Studio</span></a
+            >
+            <div class="container">
+              <ul class="nav-list list container">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-list-link link">Студия</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./portfolio.html" class="nav-list-link link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-list-link link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <ul class="contact-list list container">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact-item link">
+              info@devstudio.com
+            </a>
           </li>
-          <li class="nav-item">
-            <a href="./portfolio.html" class="nav-list-link link">Портфолио</a>
+          <li>
+            <a href="tel:+380961111111" class="contact-item link">
+              +38 096 111 11 11
+            </a>
           </li>
-          <li class="nav-item link">Контакты</li>
         </ul>
-      </nav>
-      <ul class="contact-list list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact-item link">
-            info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contact-item link">
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section>
-        <h2 hidden>Портфолио</h2>
-        <ul class="filter-types list">
+        <h2 class="section-title-hidden">Портфолио</h2>
+        <ul class="filter-types list container">
           <li class="filter-type-one">
             <button class="filter-button" type="button">Все</button>
           </li>
@@ -66,7 +78,7 @@
             <button class="filter-button" type="button">Маркетинг</button>
           </li>
         </ul>
-        <ul class="project-list list">
+        <ul class="project-list list container-wrap">
           <li class="project-item">
             <a href="">
               <img

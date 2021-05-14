@@ -1,7 +1,29 @@
-body {
-  font-family: Roboto, sans-serif;
-  color: #212121;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+
 :root {
   --color-logo-btn-accent: #2196f3;
 }
@@ -14,11 +36,53 @@ body {
 :root {
   --secondary-font: Raleway;
 }
-/*=====HEADER=====*/
-.header {
+body {
   font-family: Roboto, sans-serif;
+  color: #212121;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+}
+.section-title {
+  text-align: center;
+}
+/*=====HEADER=====*/
+.header-container {
+  display: flex;
+  align-items: center;
+ 
+}
+.nav {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+  margin-right: 305px;
+  align-items: center;
+  }
+
+.logo {
+  display: block;
+  margin-right: 90px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 3;
+  color: var(--color-logo-btn-accent);
+}
+.logo-studio {
+  color: #000000;
 }
 .nav-item {
+  margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -29,9 +93,17 @@ body {
 .nav-item:focus {
   color: var(--color-logo-btn-accent);
 }
+.contact-list {
+  display: flex;
+  align-items: center;  
+    color: var(--second-colour-for-text);
+}
+.e-mail {
+  margin-right: 30px;
+} 
 .contact-item {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 14px;  
   line-height: 1.17;
   letter-spacing: 2;
 }
@@ -39,11 +111,11 @@ body {
 .contact-item:focus {
   color: var(--color-logo-btn-accent);
 }
-.contact-list {
-  color: var(--second-colour-for-text);
-}
 /*======END HEADER=====*/
 /*======SECTION HERO=====*/
+.slogan {
+  text-align: center;
+}
 .slogan {
   text-transform: uppercase;
   font-family: inherit;
@@ -52,6 +124,11 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 6;
+}
+.make-order {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .make-order {
   font-weight: 700;
@@ -73,6 +150,12 @@ body {
 .section-title-hidden {
   visibility: hidden;
 }
+.features-list {
+  display: flex;
+}
+.section-features {
+  padding-bottom: 47px;
+}
 .subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -85,8 +168,39 @@ body {
   letter-spacing: 3;
   color: var(--second-colour-for-text);
 }
+.antena {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.clock {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.diagram {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.astronaut {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 /*======SECTION FEATURES END=====*/
+/*======SECTION OPPORTUNITY=====*/
+.image-list {
+  display: flex;
+}
+.section-opportunity {
+  padding-top: 47px;
+}
+/*======SECTION OPPORTUNITY END=====*/
 /*======SECTION OUR TEAM=====*/
+.card-list {
+  display: flex;
+}
 .member-name {
   font-weight: 500;
   font-size: 16px;
@@ -100,6 +214,16 @@ body {
   color: var(--second-colour-for-text);
 }
 /*======SECTION OUR TEAM END=====*/
+/*======SECTION CONSTANT CLIENTS=====*/
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.client-item {
+  border: 2px solid #757575;
+}
+/*======SECTION CONSTANT CLIENTS END=====*/
 /*======FOOTER=====*/
 .footer {
   font-size: 14px;
@@ -117,9 +241,16 @@ body {
 .all-contacts:focus {
   color: var(--color-logo-btn-accent);
 }
+.socialnetworks {
+  display: flex;
+}
 /*======FOOTER END=====*/
 
 /*======LIST PROJECTS=====*/
+.project-item {
+  margin-top: 30px;
+  margin-left: 30px;
+}
 .project-name {
   font-weight: 700;
   font-size: 18px;
@@ -132,19 +263,14 @@ body {
   letter-spacing: 3;
   color: var(--second-colour-for-text);
 }
+.container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
 /*======LIST PROJECTS END=====*/
 /*======COMPONETS=====*/
-.logo {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17;
-  letter-spacing: 3;
-  color: var(--color-logo-btn-accent);
-}
-.logo-studio {
-  color: #000000;
-}
+
 .section-title {
   font-size: 36px;
   line-height: 1.17;
@@ -163,13 +289,8 @@ body {
   background-color: var(--color-logo-btn-accent);
   color: var(--accent-text-for-btn);
 }
-.link {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
-}
+
 a {
   color: inherit;
-}
+
 /*======COMPONETS END=====*/
