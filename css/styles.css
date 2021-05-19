@@ -90,15 +90,15 @@ img {
    width: 1170px;
 }
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px; 
   border-bottom: solid 2px #ececec;
 }
 .nav {
   display: flex;
 }
 .nav-list {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;  
+  display: flex;  
   align-items: center;
   font-family: Roboto;
   font-weight: 500; 
@@ -106,6 +106,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.nav-list-link { 
+  padding-top: 32px;
+  padding-bottom: 32px; }
 .logo {
   margin-right: 93px;
   margin-top: auto;
@@ -142,9 +145,14 @@ img {
   color: var(--second-colour-for-text);
 }
 .e-mail {
+  display: inline-flex;
   margin-right: 50px;
   margin-left: auto;
 }
+.e-mail::before {
+margin-right: 10px;
+background-image: url(./images/mainpage/envelope.svg);
+ }
 .contact-item {
   font-weight: 500;
   font-size: 14px;
@@ -159,15 +167,10 @@ img {
 
 /*======SECTION HERO=====*/
 .hero-section {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 94px;
+  padding-top: 200px; 
+  padding-bottom: 200px;
   background-color: #c4c4c4;
-  padding-bottom: 94px;
-}
-.hero-container {
-margin-top: 106px;
-margin-bottom: 108px;
+  background-image: url(/images/mainpage/hero.jpg);
 }
 .slogan {
   width: 696px;
@@ -385,7 +388,7 @@ margin-bottom: 108px;
 }
 .footer-container-left {
   margin-top: 60px;
-  margin-bottom: 20px;
+  
  text-align: left;
 }
 .logo-studio-footer {
@@ -405,9 +408,15 @@ margin-bottom: 108px;
   margin-bottom: 60px;
   margin-top: 20px;
 }
+.contact-item-map {
+  color: var(--accent-text-for-btn);
+}
 .contact-item-map:hover,
 .contact-item-map:focus {
   color: var(--color-logo-btn-accent);
+}
+.contact-list-footer-item {
+  padding-bottom: 6px;
 }
 .all-contacts:hover,
 .all-contacts:focus {
@@ -440,7 +449,7 @@ margin-bottom: 108px;
 /*======LIST PROJECTS=====*/
 .filter-container {
   width: 1170px;
-}
+  }
 .project-name {
   font-weight: 700;
   font-size: 18px;
@@ -470,7 +479,8 @@ margin-bottom: 108px;
 .filter-types {
   display: flex;
   padding-left: 275px;
-  margin-bottom: 34px;
+  margin-bottom: 46px;
+  margin-top: -30px;
 }
 .container-wrap {
   display: flex;
