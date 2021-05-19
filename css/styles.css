@@ -388,7 +388,8 @@ background-image: url(./images/mainpage/envelope.svg);
 }
 .footer-container-left {
   margin-top: 60px;
-  
+  margin-right: 70px;
+  width: 231px;  
  text-align: left;
 }
 .logo-studio-footer {
