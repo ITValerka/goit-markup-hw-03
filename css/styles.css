@@ -415,6 +415,9 @@ background-image: url(./images/mainpage/envelope.svg);
 .contact-item-map:focus {
   color: var(--color-logo-btn-accent);
 }
+.contact-item-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
 .contact-list-footer-item {
   padding-bottom: 6px;
 }
